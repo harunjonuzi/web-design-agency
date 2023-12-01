@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+@use '../base/grid' as *;
+
+.text-columns {
+  @include page-grid;
+
+  .button {
+    margin-left: auto;
+  }
+}

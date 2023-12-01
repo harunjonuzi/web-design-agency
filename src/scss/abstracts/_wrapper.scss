@@ -1,8 +1,8 @@
-@use '../abstracts/' as a;
+@use 'functions' as f;
 
 .wrapper {
   // This will grow to 1110px in desktop size, and on mobile size it will remove 32px from both sides, giving it a natural padding
-  width: min(a.rem(1110), calc(100% - a.rem(32)));
+  width: min(f.rem(1110), calc(100% - f.rem(32)));
   margin-inline: auto;
 }
 

@@ -11,5 +11,9 @@
   "devDependencies": {
     "sass": "^1.69.5",
     "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "@studio-freight/lenis": "^1.0.29",
+    "gsap": "^3.12.3"
   }
 }

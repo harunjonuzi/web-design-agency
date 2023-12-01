@@ -1,0 +1,7 @@
+@use '../base' as *;
+
+.company {
+  &__content {
+    @include page-grid;
+  }
+}
