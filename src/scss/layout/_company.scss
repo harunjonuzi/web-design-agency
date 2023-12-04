@@ -4,4 +4,18 @@
   &__content {
     @include page-grid;
   }
+
+  @include breakpoint-down(medium) {
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        text-align: center;
+      }
+    }
+
+  }
 }

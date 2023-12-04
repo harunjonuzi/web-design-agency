@@ -26,7 +26,7 @@ export default class ParallaxImage {
                scrub: true,
                //  markers: true,
             },
-            y: 0,
+            y: -50,
             ease: "none",
          }
       );

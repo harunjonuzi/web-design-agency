@@ -23,4 +23,32 @@
   &__text {
     margin-bottom: 4.8rem;
   }
+
+  @include breakpoint-down(medium) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__left {
+      height: 100%;
+    }
+
+    &__image {
+      height: 100%;
+    }
+
+    &__right {
+      margin-top: 16rem;
+      margin-bottom: 16rem;
+    }
+
+    &__content {
+      max-width: 45ch;
+    }
+
+    &__text {
+      margin-bottom: 4.8rem;
+    }
+  }
 }
