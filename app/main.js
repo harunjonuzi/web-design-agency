@@ -1,39 +1,18 @@
 import "../src/scss/style.scss";
 import Lenis from "@studio-freight/lenis";
-import TextReveal from "./animations/TextReveal";
-import Button from "./animations/Button";
+import Home from "./pages/Home";
 
 class App {
    constructor() {
+      document.body.style.opacity = "1";
       // "_" convention means it's a private method, and it should not be called outside this method
       this._createLenis();
-      this._createTextReveals();
-      this._createButtons();
+      this._createHome();
       this._render();
    }
 
-   _createTextReveals() {
-      const textItems = [
-         ...document.querySelectorAll('[data-animation="text-reveal"]'),
-      ];
-
-      textItems.forEach((text) => {
-         new TextReveal({
-            element: text,
-         });
-      });
-   }
-
-   _createButtons() {
-      const buttons = [
-         ...document.querySelectorAll('[data-animation="button"]'),
-      ];
-
-      buttons.forEach((button) => {
-         new Button({
-            element: button,
-         });
-      });
+   _createHome() {
+      this.home = new Home();
    }
 
    _createLenis() {
