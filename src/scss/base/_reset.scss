@@ -1,5 +1,14 @@
 @use '../abstracts' as *;
 
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -10,12 +19,22 @@
   user-select: none;
 }
 
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+}
+
 a {
   color: inherit;
   font-size: inherit;
   font-family: inherit;
   color: inherit;
   text-decoration: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -27,25 +46,6 @@ ol[role='list'] {
 ul,
 ol {
   margin-left: 1em;
-}
-
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -104,4 +104,25 @@ select {
   border: 0;
   clip: rect(0 0 0 0);
   word-wrap: normal !important;
+}
+
+/* Lenis suggested default styles */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }

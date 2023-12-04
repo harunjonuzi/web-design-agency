@@ -1,5 +1,4 @@
 @use '../abstracts' as *;
-@use 'type-scale' as *;
 
 html {
   font-size: calc(100vw / var(--desktop-width) * 10);
@@ -19,6 +18,7 @@ body {
 
 p {
   margin-bottom: 16px;
+  font-weight: 300;
 }
 
 h1,

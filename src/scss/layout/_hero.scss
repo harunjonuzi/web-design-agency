@@ -1,5 +1,4 @@
 @use '../abstracts' as *;
-@use '../typography/type-scale' as *;
 
 .hero {
   &__content {
@@ -24,18 +23,23 @@
     position: relative;
   }
 
+  &__img {
+    filter: brightness(30%)
+  }
+
   &__play {
     @include center-align;
 
     display: flex;
     align-items: center;
     gap: 16px;
+    z-index: 2;
     cursor: pointer;
     color: var(--color-text--white);
-    z-index: 2;
 
     &__text {
       @include fluid-type(430px, 1440px, 16px, 24px);
+      margin: 0;
     }
   }
 }

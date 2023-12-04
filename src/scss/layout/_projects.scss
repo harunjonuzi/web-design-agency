@@ -1,5 +1,4 @@
 @use '../abstracts' as *;
-@use '../base/grid' as *;
 
 .projects {
   @include page-grid;
