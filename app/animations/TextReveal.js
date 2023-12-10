@@ -19,7 +19,7 @@ export default class TextReveal extends Observer {
    onEnter() {
       gsap.to(this.splitWords.words, {
          y: "0%",
-         duration: 1.3,
+         duration: 1,
          stagger: 0.05,
          ease: "power3inOut",
       });

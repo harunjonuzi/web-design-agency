@@ -4,8 +4,11 @@ import Home from "./pages/Home";
 
 class App {
    constructor() {
+      // It's common to set the initial opacity explicitly in JavaScript to avoid a flicker effect during page load.
       document.body.style.opacity = "1";
       // "_" convention means it's a private method, and it should not be called outside this method
+
+      // Lenis
       this._createLenis();
       this._createHome();
       this._render();
