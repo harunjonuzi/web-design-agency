@@ -17,7 +17,7 @@ A quick project for an imaginary Design Studio that helped me refine my animatio
 Clone the project:
 
 ```bash
-  git clone https://github.com/harunjonuzi/Website-DesignAgency.git
+  git clone https://github.com/harunjonuzi/web-design-agency.git
 ```
 
 Go to the project directory:
