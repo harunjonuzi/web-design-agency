@@ -10,7 +10,7 @@ A quick project for an imaginary Design Studio that helped me refine my animatio
 
 ## Preview
 
-![Logo](public/img/designagencygif.gif)
+![Logo](public/img/DesignAgencyGif.gif)
 
 ## Run Locally
 
