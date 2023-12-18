@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-    base: "/Website-DesignAgency/",
+    base: "/web-design-agency/",
 });
